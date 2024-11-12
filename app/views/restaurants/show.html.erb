@@ -1,0 +1,5 @@
+<h1><%= @restaurant.name %></h1>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.rating %> / 5</p>
+<%= link_to "Supprimer", restaurant_path(@restaurant), data: { turbo_method: :delete, turbo_confirm: "Est tu sûr?" } %>
+<%= link_to "Retour", restaurants_path %>
